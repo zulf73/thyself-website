@@ -1,42 +1,27 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import ImgArray from "~components/imgarray"
 import Layout from "~components/layout"
 
 export default ({ data }) => {
-  const imgList = [
-    "Flor-Garduno.jpg",
-    "Robert-Frank-1950.jpg",
-    "Sergio-Larrain.jpg",
-    "salgado-2017-kuwait.jpg",
-    "Goddard-Still.jpg",
-    "Robert-Frank-2016-Aug.jpg",
-    "arbus-01.jpg",
-    "Henri-Cartier-Bresson-Jean-Berger.jpg",
-    "Robert-Frank-NYC-1948.jpg",
-    "robert-frank-2.jpg",
-  ]
-
   return (
     <div>
       <Helmet>
         <meta charset="utf-8" />
         <link rel="canonical" href="www.thyselfdna.com/about"></link>
       </Helmet>
+      B{" "}
       <Layout>
-        <h1> Psychologists </h1>
+        <h1> Research </h1>
         <p>
           {" "}
-          William Wundt in 1879 pioneered psychology as a scientific discipline.
-          Personality psychology had origins with Francis Galton who brilliantly
-          suggested that all English words describing personality traits exist
-          because they are the species' method of providing significance to
-          these traits. Carl Jung had written "On Psychological Types" based on
-          two scales of thinking-feeling and sensing-intuition which Isabel
-          Briggs Myers and Karen Cook Myers implemented Jung's ideas in a 16
-          Types categorization and in the past several decades Robert McCrae and
-          Paul Costa had championed the five factor model since mid 1970s.{" "}
+          We focus primarily on massive global personality trait data that had
+          been measured by World Values Survey and find 33 factors able to
+          specify individual personalities almost uniquely. These form the
+          personality DNA variables. We also explore further artificial
+          intelligence models of human personality that come from the OCC model
+          that had allowed AI researchers to use Bayesian Networks to model
+          artificial personalities which we use as a tool to model actual human
+          personalities.{" "}
         </p>
 
         <p>
@@ -51,8 +36,6 @@ export default ({ data }) => {
           probabilities of many sorts of events putting our approach firmly in
           the quantitative psychological tradition.
         </p>
-
-        <ImgArray list={imgList} />
       </Layout>
     </div>
   )

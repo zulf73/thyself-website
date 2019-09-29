@@ -31,6 +31,10 @@ module.exports = {
         link: "/products",
       },
       {
+         name: "research",
+         link: "/research",
+      },
+      {
         name: "psychologists",
         link: "/psychologists",
       },

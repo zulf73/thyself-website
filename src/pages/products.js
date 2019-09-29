@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "~components/layout"
 
 export default ({ data }) => {
-  const imgQuery = useStaticQuery(graphql`
+  useStaticQuery(graphql`
     query {
       site {
         siteMetadata {

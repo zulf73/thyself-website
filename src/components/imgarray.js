@@ -1,7 +1,6 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
-
-import { useQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 /*
@@ -23,6 +22,7 @@ class ImgArray extends React.Component {
     super(props)
     this.imgList = props.match.params.list
 
+    /*
     var jl = "[" + this.imgList.join() + "]"
     var query = graphql`
       query {
@@ -37,6 +37,7 @@ class ImgArray extends React.Component {
     `
     var ll = this.imgList.join()
     var res = useQuery(query, { variables: { ll } })
+    */
   }
 
   render() {
