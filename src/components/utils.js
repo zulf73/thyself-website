@@ -1,33 +1,31 @@
-
-jsonFromPost = function( url, toSendBody ){
-    fetch(url, {
-        method: 'get',
+jsonFromPost = function(url, toSendBody) {
+  fetch(url, {
+    method: "get",
     headers: {
-      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
     },
-    body: {toSendBody}
+    body: { toSendBody },
   })
-  .then(json)
-  .then(function (data) {
-    //console.log('Request succeeded with JSON response', data);
-    retun data;
-  })
-  .catch(function (error) {
-    console.log('Request failed', error);
-  });
+    .then(json)
+    .then(function(data) {
+      //console.log('Request succeeded with JSON response', data);
+      return data
+    })
+    .catch(function(error) {
+      console.log("Request failed", error)
+    })
 }
 
-jsonFromGet = function( url ){
-    fetch(url, {
-        method: 'get',
+jsonFromGet = function(url) {
+  fetch(url, {
+    method: "get",
   })
-  .then(json)
-  .then(function (data) {
-    //console.log('Request succeeded with JSON response', data);
-    retun data;
-  })
-  .catch(function (error) {
-    console.log('Request failed', error);
-  });
+    .then(json)
+    .then(function(data) {
+      //console.log('Request succeeded with JSON response', data);
+      return data
+    })
+    .catch(function(error) {
+      console.log("Request failed", error)
+    })
 }
-
